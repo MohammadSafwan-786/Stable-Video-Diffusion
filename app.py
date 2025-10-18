@@ -27,3 +27,6 @@ def generate():
     imageio.mimsave(video_path, video_frames, fps=8)
 
     return send_file(video_path, mimetype="video/mp4")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
